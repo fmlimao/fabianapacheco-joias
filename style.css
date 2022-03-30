@@ -59,66 +59,43 @@ body::-webkit-scrollbar-thumb {
   width: 38px;
 }
 .app-body .app-body-item {
-  border-bottom: 1px solid #333;
   padding: 32px 0;
+  border-bottom: 1px solid #333;
 }
-.app-body .app-body-item .app-body-item-row .app-body-item-row-col-image {
-  float: left;
+.app-body .app-body-item .media .media-left img {
   width: 120px;
   height: 120px;
+  border-radius: 6px;
 }
-.app-body .app-body-item .app-body-item-row .app-body-item-row-col-image .app-body-item-row-col-image-thumbnail {
-  width: 120px;
-  border-color: #000;
-  border-radius: 4px;
+.app-body .app-body-item .media .media-left img.image-gray {
+  filter: grayscale(100%);
 }
-.app-body .app-body-item .app-body-item-row .app-body-item-row-col-details {
-  float: left;
-  padding-left: 16px;
-  height: 120px;
-}
-.app-body .app-body-item .app-body-item-row .app-body-item-row-col-details .app-body-item-row-col-details-title {
+.app-body .app-body-item .media .media-body .media-heading {
   margin: 0;
   margin-bottom: 8px;
   padding: 0;
+  font-size: 18px;
   color: #997B62;
 }
-.app-body .app-body-item .app-body-item-row .app-body-item-row-col-details .app-body-item-row-col-details-description {
+.app-body .app-body-item .media .media-body .description {
   margin: 0;
   margin-bottom: 24px;
   padding: 0;
   color: #fff;
 }
-.app-body .app-body-item .app-body-item-row .app-body-item-row-col-details .app-body-item-row-col-details-price {
+.app-body .app-body-item .media .media-body .price {
   margin: 0;
   padding: 0;
   font-size: 20px;
   color: #c0b055;
   font-weight: bold;
 }
-.app-body .app-body-item .app-body-item-row .app-body-item-row-col-details .app-body-item-row-col-details-price sup {
+.app-body .app-body-item .media .media-body .price sup {
   font-size: 12px;
 }
 @media screen and (min-width: 768px) {
-  .app-body .app-body-item .app-body-item-row .app-body-item-row-col-image {
-    float: none;
-    width: auto;
-    height: 200px;
-    text-align: center;
-  }
-  .app-body .app-body-item .app-body-item-row .app-body-item-row-col-image .app-body-item-row-col-image-thumbnail {
-    margin: auto;
-    width: auto;
-    height: 200px;
-  }
-  .app-body .app-body-item .app-body-item-row .app-body-item-row-col-details {
-    float: none;
-    padding: 16px;
-    height: 140px;
-    text-align: center;
-  }
-  .app-body .app-body-item .app-body-item-row .app-body-item-row-col-details .app-body-item-row-col-details-price {
-    font-size: 24px;
+  .app-body .app-body-item .media {
+    height: 180px;
   }
 }
 .app-footer {
