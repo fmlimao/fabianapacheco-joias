@@ -58,14 +58,6 @@
 
   <main class="app-main" id="AppVue">
 
-    <!-- <div class="box-links"> -->
-    <!-- <div class="container"> -->
-    <!-- <a href="/index.html">Modelo A</a> -->
-    <!-- &nbsp;&nbsp;|&nbsp;&nbsp; -->
-    <!-- <a href="/index2.html">Modelo B</a> -->
-    <!-- </div> -->
-    <!-- </div> -->
-
     <header class="app-header">
       <div class="container">
         <h1>
@@ -86,28 +78,58 @@
 
       <div class="row">
 
-        <div class="col-xs-12 col-sm-6 col-lg-4 app-body-col" v-for="item in list">
+        <div class="col-xs-12 col-md-3">
 
-          <!-- Card da Joia -->
-          <section class="app-body-item">
+          <div class="filter">
+            <div class="title">Filtrar por:</div>
 
-            <div class="media">
-              <div class="media-left">
-                <a href="#">
-                  <img v-if="item.images[0]" :src="item.images[0]" class="media-object" :alt="item.title">
-                  <img v-else src="/img/j3-400.jpg" class="media-object image-gray" :alt="item.title">
-                </a>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">{{item.title}}</h4>
-                <p class="description">Cod. {{item.id}}</p>
-                <p class="price">
-                  <sup>R$</sup>
-                  {{item.price}}
-                </p>
-              </div>
+            <ul>
+              <li v-for="category in categories">
+                <label :for="'cb_' + category.name">
+                  <input type="checkbox" :id="'cb_' + category.name" v-model="category.selected"
+                    @change.prevent="toFilter()">
+                  {{ category.name.toUpperCase() }} ({{ category.amount }})
+                </label>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <!-- /.col -->
+
+        <div class="col-xs-12 col-md-9">
+
+
+          <div class="row">
+
+            <div class="col-xs-12 col-sm-6 app-body-col" v-for="item in list">
+
+              <!-- Card da Joia -->
+              <section class="app-body-item">
+
+                <div class="media">
+                  <div class="media-left">
+                    <a href="#">
+                      <img v-if="item.images[0]" :src="item.images[0]" class="media-object" :alt="item.title">
+                      <img v-else src="/img/j3-400.jpg" class="media-object image-gray" :alt="item.title">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">{{item.title}}</h4>
+                    <p class="description">Cod. {{item.id}}</p>
+                    <p class="price">
+                      <sup>R$</sup>
+                      {{item.price}}
+                    </p>
+                  </div>
+                </div>
+              </section>
+
             </div>
-          </section>
+            <!-- /.col -->
+
+          </div>
+          <!-- /.row -->
 
         </div>
         <!-- /.col -->

@@ -59,7 +59,7 @@ body::-webkit-scrollbar-thumb {
   width: 38px;
 }
 .app-body .app-body-item {
-  padding: 32px 0;
+  margin-bottom: 32px;
   border-bottom: 1px solid #333;
 }
 .app-body .app-body-item .media .media-left img {
@@ -150,4 +150,25 @@ body::-webkit-scrollbar-thumb {
   text-transform: uppercase;
   text-align: center;
   color: #f4e7c4;
+}
+.filter {
+  background-color: #222;
+  border-radius: 4px;
+  margin-bottom: 32px;
+  padding: 16px;
+  color: #999;
+}
+.filter .title {
+  margin-bottom: 16px;
+}
+.filter ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.filter ul li {
+  margin-bottom: 8px;
+}
+.filter ul li:last-child {
+  margin-bottom: 0;
 }
