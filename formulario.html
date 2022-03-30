@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulario</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      Registro
+    </div>
+  </header>
+
+  <div class="container">
+    <main class="well">
+      <form id="formulario" action="#">
+
+        <div class="form-group">
+          <label>Código de Convite</label>
+          <input type="text" class="form-control" placeholder="811211">
+        </div>
+
+        <div class="form-group">
+          <label>Número de Telefone (+55)</label>
+          <input type="text" class="form-control" placeholder="Número de Telefone (+55)">
+        </div>
+
+        <div class="form-group">
+          <label>Senha</label>
+          <input type="text" class="form-control" placeholder="Senha">
+        </div>
+
+        <div class="form-group">
+          <label>Confirme a Senha</label>
+          <input type="text" class="form-control" placeholder="Confirme a Senha">
+        </div>
+
+        <div class="form-group">
+          <label>Senha de Retirada</label>
+          <input type="text" class="form-control" placeholder="Senha de Retirada">
+        </div>
+
+        <p>
+          <button type="submit" class="btn btn-success btn-block">Enviar</button>
+        </p>
+
+        <p>
+          <button type="submit" class="btn btn-default btn-block">Conecte-se</button>
+        </p>
+
+      </form>
+    </main>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalMensagem" tabindex="-1" role="dialog" aria-labelledby="modalMensagemLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modalMensagemLabel">Mensagem</h4>
+        </div>
+        <div class="modal-body">
+          <div class="lead text-danger">
+            É assim que se faz um formulário Japa
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+    crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $('#formulario').off('submit').on('submit', function (e) {
+        e.preventDefault();
+
+        $('#modalMensagem').modal('show');
+      });
+    });
+  </script>
+
+</body>
+
+</html>

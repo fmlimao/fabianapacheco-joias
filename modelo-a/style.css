@@ -1,0 +1,147 @@
+html,
+body {
+  background-color: #151516;
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding-bottom: 64px;
+}
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #333;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #997B62;
+}
+.app-main {
+  background: url('img/glow-cont.jpg') no-repeat 50% 0;
+}
+.app-header {
+  padding-top: 32px;
+  margin-bottom: 32px;
+}
+.app-header h1 {
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #f4e7c4;
+}
+.app-header .app-header-line {
+  display: flex;
+  height: 14px;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+.app-header .app-header-line div {
+  height: 14px;
+  text-align: center;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.app-header .app-header-line div.line {
+  flex-grow: 1;
+  background: url(img/pattern-line.png) repeat-x 0 0;
+  margin-top: 6px;
+  height: 3px;
+}
+.app-header .app-header-line div.icon {
+  background: url(img/pattern-center.png) no-repeat 0 0;
+  width: 38px;
+}
+.app-body .app-body-item {
+  background-color: #fff;
+  border: 3px double #997B62;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  padding: 8px;
+}
+.app-body .app-body-item .app-body-item-row .app-body-item-row-col-image {
+  float: left;
+  width: 120px;
+  height: 120px;
+}
+.app-body .app-body-item .app-body-item-row .app-body-item-row-col-image .app-body-item-row-col-image-thumbnail {
+  width: 120px;
+  border-color: #000;
+  border-radius: 4px;
+}
+.app-body .app-body-item .app-body-item-row .app-body-item-row-col-details {
+  float: left;
+  padding-left: 16px;
+  height: 120px;
+}
+.app-body .app-body-item .app-body-item-row .app-body-item-row-col-details .app-body-item-row-col-details-title {
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
+}
+.app-body .app-body-item .app-body-item-row .app-body-item-row-col-details .app-body-item-row-col-details-description {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  color: #999;
+}
+.app-body .app-body-item .app-body-item-row .app-body-item-row-col-details .app-body-item-row-col-details-price {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  color: #d34b4b;
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  .app-body .app-body-item {
+    padding: 0;
+    overflow: hidden;
+  }
+  .app-body .app-body-item .app-body-item-row .app-body-item-row-col-image {
+    float: none;
+    width: auto;
+    height: 200px;
+    text-align: center;
+  }
+  .app-body .app-body-item .app-body-item-row .app-body-item-row-col-image .app-body-item-row-col-image-thumbnail {
+    margin: auto;
+    width: auto;
+    height: 200px;
+    border-radius: 0;
+  }
+  .app-body .app-body-item .app-body-item-row .app-body-item-row-col-details {
+    float: none;
+    padding: 16px;
+    height: 140px;
+    text-align: center;
+  }
+  .app-body .app-body-item .app-body-item-row .app-body-item-row-col-details .app-body-item-row-col-details-price {
+    font-size: 24px;
+  }
+}
+.whatsapp-contact {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+}
+.whatsapp-contact a {
+  display: block;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+.whatsapp-contact a img {
+  max-width: 100%;
+}
+.box-links {
+  background-color: #e6b635;
+  color: #fff;
+  height: 60px;
+  line-height: 60px;
+}
+.box-links a {
+  color: #fff;
+  text-decoration: underline;
+}

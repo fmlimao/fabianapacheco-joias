@@ -1,0 +1,241 @@
+// https://www.templatemonsterpreview.com/pt-br/demo/41287.html?_gl=1*1pli4jj*_ga*MTQ3ODMwNDU4NS4xNjQ3NDUwODg1*_ga_FTPYEGT5LY*MTY0NzQ1MDg4NC4xLjAuMTY0NzQ1MDg4Ni41OA..&_ga=2.43444773.1264592642.1647450885-1478304585.1647450885
+
+html,
+body {
+  background-color: #151516;
+  margin: 0;
+  padding: 0;
+}
+
+// body {
+//   padding-bottom: 64px;
+// }
+
+body::-webkit-scrollbar {
+  width: 8px
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #333
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #997B62
+}
+
+.app-main {
+  background: url('img/glow-cont.jpg') no-repeat 50% 0;
+}
+
+.app-header {
+  padding-top: 32px;
+  margin-bottom: 32px;
+
+  // 253 x 155
+  // 419 x 305
+
+  h1 {
+    // margin: 0;
+    // margin-bottom: 16px;
+    // padding: 0;
+    // font-family: "Times New Roman", Times, serif;
+    // text-transform: uppercase;
+    // text-align: center;
+    // color: #f4e7c4;
+
+    // background-color: red;
+    height: 155px;
+    text-align: center;
+    overflow: hidden;
+
+    span {
+      display: block;
+      background-color: green;
+      height: 10px;
+      font-size: 5px;
+      margin-top: -10px;
+    }
+
+    img {
+      height: 155px;
+      margin: auto;
+    }
+  }
+
+  .app-header-line {
+    display: flex;
+    height: 14px;
+    margin-left: -2px;
+    margin-right: -2px;
+
+    div {
+      height: 14px;
+      text-align: center;
+      margin-left: 2px;
+      margin-right: 2px;
+
+      &.line {
+        flex-grow: 1;
+        background: url(img/pattern-line.png) repeat-x 0 0;
+        margin-top: 6px;
+        height: 3px;
+      }
+
+      &.icon {
+        background: url(img/pattern-center.png) no-repeat 0 0;
+        width: 38px;
+      }
+    }
+  }
+}
+
+.app-body {
+
+  .app-body-item {
+    // background-color: red;
+    border-bottom: 1px solid #333;
+    // border-radius: 6px;
+    // margin-bottom: 16px;
+    padding: 32px 0;
+
+    .app-body-item-row {
+
+      .app-body-item-row-col-image {
+        float: left;
+        width: 120px;
+        height: 120px;
+
+        .app-body-item-row-col-image-thumbnail {
+          width: 120px;
+          border-color: #000;
+          border-radius: 4px;
+        }
+      }
+
+      .app-body-item-row-col-details {
+        float: left;
+        padding-left: 16px;
+        height: 120px;
+
+        .app-body-item-row-col-details-title {
+          margin: 0;
+          margin-bottom: 8px;
+          padding: 0;
+          color: #997B62;
+        }
+
+        .app-body-item-row-col-details-description {
+          margin: 0;
+          margin-bottom: 24px;
+          padding: 0;
+          color: #fff;
+        }
+
+        .app-body-item-row-col-details-price {
+          margin: 0;
+          padding: 0;
+          font-size: 20px;
+          color: #c0b055;
+          font-weight: bold;
+
+          sup {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      .app-body-item-row {
+        .app-body-item-row-col-image {
+          float: none;
+          width: auto;
+          height: 200px;
+          text-align: center;
+
+          .app-body-item-row-col-image-thumbnail {
+            margin: auto;
+            width: auto;
+            height: 200px;
+            // border-radius: 0;
+          }
+        }
+
+        .app-body-item-row-col-details {
+          float: none;
+          padding: 16px;
+          height: 140px;
+          text-align: center;
+
+          .app-body-item-row-col-details-price {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.app-footer {
+  background-color: #090909;
+  padding: 32px 0;
+  text-align: center;
+  color: #666;
+}
+
+.whatsapp-contact-2 {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+
+  a {
+    display: block;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.whatsapp-contact {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+
+  a {
+    display: block;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+
+    line-height: 55px;
+    text-align: center;
+    font-size: 55px;
+    color: #c0b055;
+  }
+}
+
+.box-links {
+  background-color: #1f1f1f;
+  color: #fff;
+  text-align: center;
+
+  height: 48px;
+  line-height: 48px;
+
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+}
+
+.maintenance {
+  font-size: 24px;
+  font-family: "Times New Roman", Times, serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #f4e7c4;
+}
