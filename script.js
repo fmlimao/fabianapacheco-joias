@@ -56,8 +56,8 @@ var App = new Vue({
 
 App.getCategories();
 
-setTimeout(() => {
+// setTimeout(() => {
   // App.categories['colar'].selected = true
-  App.categories['brinco'].selected = true
-  App.toFilter()
-}, 500)
+  // App.categories['brinco'].selected = true
+  // App.toFilter()
+// }, 500)
