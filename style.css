@@ -163,14 +163,28 @@ body::-webkit-scrollbar-thumb {
 .filter ul {
   margin: 0;
   padding: 0;
+  width: 100%;
   list-style: none;
 }
 .filter ul li {
   margin-bottom: 8px;
-}
-.filter ul li input {
-  margin-right: 8px;
+  width: 50%;
+  float: left;
 }
 .filter ul li:last-child {
   margin-bottom: 0;
+}
+.filter ul li label {
+  display: block;
+  height: 36px;
+  line-height: 36px;
+}
+.filter ul li label input {
+  margin-right: 8px;
+}
+@media screen and (min-width: 768px) {
+  .filter ul li {
+    width: 100%;
+    float: none;
+  }
 }

@@ -206,19 +206,37 @@ body::-webkit-scrollbar-thumb {
   }
 
   ul {
+    // background-color: red;
+
     margin: 0;
     padding: 0;
+    width: 100%;
     list-style: none;
 
     li {
-      margin-bottom: 8px;
+      // background-color: green;
 
-      input {
-        margin-right: 8px;
-      }
+      margin-bottom: 8px;
+      width: 50%;
+      float: left;
 
       &:last-child {
         margin-bottom: 0;
+      }
+
+      label {
+        display: block;
+        height: 36px;
+        line-height: 36px;
+
+        input {
+          margin-right: 8px;
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+        width: 100%;
+        float: none;
       }
     }
   }
