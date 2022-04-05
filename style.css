@@ -27,14 +27,13 @@ body::-webkit-scrollbar-thumb {
 }
 .app-header h1 span {
   display: block;
-  background-color: green;
   height: 10px;
   font-size: 5px;
   margin-top: -10px;
 }
 .app-header h1 img {
-  height: 155px;
   margin: auto;
+  max-width: 100%;
 }
 .app-header .app-header-line {
   display: flex;
@@ -168,6 +167,9 @@ body::-webkit-scrollbar-thumb {
 }
 .filter ul li {
   margin-bottom: 8px;
+}
+.filter ul li input {
+  margin-right: 8px;
 }
 .filter ul li:last-child {
   margin-bottom: 0;
